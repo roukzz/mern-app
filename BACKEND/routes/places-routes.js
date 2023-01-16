@@ -6,7 +6,7 @@ const router = express.Router();
 
 
 
-// ========= get place by placeId =======
+// ========= get place by placeIdd =======
 router.get('/:pid',placesController.getPlaceById);
 
 // ========= get place by creator ID =======
