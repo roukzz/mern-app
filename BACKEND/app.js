@@ -6,11 +6,11 @@ const placesRoutes = require('./routes/places-routes');
 
 const app = express();
 
+app.use(bodyParser.json());
 
+app.use('/api/places', placesRoutes);
 
-app.use('/api/places',placesRoutes);
-
-app.use((error,req,res,next) => {
+app.use((error, req, res, next) => {
 
     if( res.headerSent){
         return next(error);
