@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const PORT = 5000;
 
+// router module that was exporter and here we are importing it
 const placesRoutes = require('./routes/places-routes');
 
 const app = express();
